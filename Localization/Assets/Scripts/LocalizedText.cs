@@ -37,6 +37,6 @@ public class LocalizedText : MonoBehaviour
         if (newKey != null)
             key = newKey;
 
-        text.text = LocalizationManager.GetTranslate(key);
+        text.SetText(LocalizationManager.GetTranslate(key));
     }
 }
